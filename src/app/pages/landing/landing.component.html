@@ -1,0 +1,30 @@
+<p>landing works!</p>
+<form
+  *ngIf="(authService.currentUser$ | async) == null"
+  [formGroup]="loginForm"
+  (ngSubmit)="login()"
+>
+  <label>
+    Username:
+    <input
+      name="username"
+      type="text"
+      formControlName="username"
+      placeholder="username"
+      required
+    />
+  </label>
+  <label>
+    Password:
+    <input
+      placeholder="password"
+      name="password"
+      type="password"
+      formControlName="password"
+      required
+    />
+  </label>
+  <button type="submit">Login</button>
+</form>
+<button onclick="login()">Login</button>
+<button onclick="logout()">Logout</button>
