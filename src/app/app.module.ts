@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { HomeComponent } from './pages/home/home.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LandingComponent],
+  declarations: [AppComponent, HomeComponent, LandingComponent, NavBarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
