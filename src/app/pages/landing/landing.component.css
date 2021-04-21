@@ -1,0 +1,15 @@
+.bin {
+  position: relative;
+}
+
+.dialog-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 35%;
+}

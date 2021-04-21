@@ -1,4 +1,22 @@
 <app-nav-bar></app-nav-bar>
+
+<div class="bin">
+  <img
+    src="/assets/images/alexander-schimmeck-ineC_oi7NHs-unsplash.jpg"
+    class="z-0"
+  />
+  <div
+    class="dialog-box box-border p-3 border-2 border-opacity-50 shadow-lg bg-white z-10 rounded-lg"
+  >
+    <p class="text-6xl text-gray500 text-center">
+      Become part of the Agora. Help Make your community more beautiful.
+    </p>
+    <button class="bg-accent rounded-full text-2xl text-white px-5 py-4">
+      Register Now
+    </button>
+  </div>
+</div>
+
 <form
   *ngIf="(authService.currentUser$ | async) == null"
   [formGroup]="loginForm"
